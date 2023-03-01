@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="imagenes_cv/r-favicon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    <title>Curriculum</title>
+    <script defer src="funciones.js"></script>
+</head>
+<body>
+    <!-- Barra Navegacion -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <h3 class="nav_logo">Ryan </h3>
+
+            <div class="nav_menu">
+                <ul>
+                    <li class="nav_item">
+                        <a href="#inicio" class="nav_link"> Inicio</a>
+                    </li>
+                    
+                    <li class="nav_item">
+                        <a href="#habilidades" class="nav_link"> Habilidades</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#educacion" class="nav_link"> Educación</a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#contacto" class="nav_link">Contacto </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Inicio -->
+
+        <section class="inicio-contenedor" id="inicio">
+            <img src="imagenes_cv/imagencv.png" alt="Foto Usuario">
+            <div class="inicio-titulo">
+                <h1 class="nombre"> Ryan Gossling</h2>
+                <h3 class="nombre-info"> Diseñador UX/UI Profesional</h3>
+                <p class="inicio-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt enim reiciendis
+                    molestias nam tempore. Ullam hic accusantium eligendi ipsam corrupti!</p>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="habilidades-contenedor" id="habilidades">
+            <h2 class="titulo"> Sobre mí</h2>
+            <h3 class="habilidades-subt"> Informacion personal y Laboral</h3>
+
+            <div class="habilidades-box">
+
+                    <div class="hab-box">
+                        <h2 class="subtitulo"> Habilidades </h2>
+                        <ul>
+                        
+                            <li> <img src="imagenes_cv/HTML5_logo.png" alt="html"> 
+                                <span> HTML</span>
+                            </li>
+                            <li> 
+                                <img src="imagenes_cv/JS-logo.png" alt="js"> 
+                                    <span>Javscript</span>
+                            </li>
+                            <li> 
+                                <img src="imagenes_cv/Python-logo.png" alt="python"> 
+                                <span>Python</span>
+                            </li>
+                            <li> 
+                                <img src="imagenes_cv/C++_Logo.png" alt="c++"> 
+                                <span>C++</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hab-box" id="exp">
+                        <h3 class="subtitulo"> Experiencia </h3>
+                        <ul>
+                            <li>5 años en Mercado Libre</li>
+                            <li>2 años en International Corporates</li>
+                            <li>2 años en Ticmas Academy</li>
+                        </ul>
+                     </div>
+            </div>
+        </section>
+
+        <!-- Educacion -->
+        <section class="educacion-contenedor" id="educacion">
+            <div class="educacion-box">
+                <h1 class="educacion-titulo"> Educacion</h1>
+                <h3 class="educacion-subt"> Desde hace más de 15 años</h3>
+                <div class="edu-box" id="edu">
+                    <ul>
+                        <li><h3>Ingenieria en Informatica</h3>Universidad de Buenos Aires 2001-2008</li>
+                        <li><h3>Posgrado Analista de Sistemas</h3>UTN 2008 - 2011</li>
+                        <li><h3>Master en UX/UI</h3>Cambridge 2011 - 2015</li>
+                        <li><h3>Pasantias de Grado</h3>Por Europa 2016-2019</li>
+                    </ul>
+                 </div>
+            </div>
+            <img src="imagenes_cv/libreria.jpg" alt="Foto Libros">
+        </section>
+
+        <!-- Contacto -->
+
+        <section class="contacto-contenedor" id="contacto">
+            <h2 class="titulo"> Contacto</h2>
+
+                <div class="contacto-box">
+                    <form id="form">
+                        <h3>Enviame tus consultas</h3>
+                        <div class="input-control">
+                             <label for="username">Nombre</label>
+                             <input id="username" name="username" type="text">
+                             <div class="error"></div>
+                        </div>
+                        <div class="input-control">
+                            <label for="email">E-Mail</label>
+                            <input id="email" name="username" type="email">
+                            <div class="error"></div>
+                       </div>
+                        <div class="input-control">
+                            <label for="titulo">Titulo</label>
+                            <input id="titulo" name="titulo" type="text">
+                            <div class="error"></div>
+                        <div class="input-control">
+                            <label for="mensaje">Mensaje</label>
+                            <input id="mensaje" name="mensaje" type="text">
+                            <div class="error"></div>
+                       </div>
+                       <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            
+        </section>
+
+        <!-- Footer -->
+        <section class="footer-contenedor">
+            <div class="footer-grid">
+
+                    <div class="footer-box">
+                        <h3 class="subtitulo"> Telefono </h3>
+                        <p>11 5890 3233</p>
+                    </div>
+
+                    <div class="footer-box">
+                        <h3 class="subtitulo"> E-Mail </h3>
+                        <p> rgosling@gmail.com </p>
+                     </div>
+
+                     <div class="footer-box">
+                        <h3 class="subtitulo"> LinkedIn </h3>
+                        <p>linkedin.com/in/rgossling/</p>
+                     </div>
+            </div>
+    </main>
+</body>
+</html>
